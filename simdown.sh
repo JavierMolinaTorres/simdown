@@ -10,7 +10,7 @@
 #
 # NOTAS SOBRE CORREO:
 #   - Este script intenta enviar un correo si el binario `mail` está disponible.
-#   - No se depende de `msmtp`, `sendemail` u otros agentes externos.
+#   - No se depende de `msmtp`, `sendmail` u otros agentes externos.
 #   - Para que el envío funcione:
 #       1. Debe estar instalado `mailutils` o equivalente (`mail` debe existir).
 #       2. Debe estar correctamente configurado el MTA local (Postfix, Exim...).
@@ -31,8 +31,8 @@ iface=""
 logfile="/var/log/simdown.log"
 preview=false
 send_email=true
-email_to="javier.molina@csic.es"
-email_from="serveis.dlgca@dicat.csic.es"   # remitente autorizado
+email_to="tu_emai@dominio.com"
+email_from="servicio.email@dominio.com"   # remitente autorizado
 email_subject="[simdown] Aviso de blackout de red"
 
 # FUNCIONES
